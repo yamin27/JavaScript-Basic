@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Learning </title>
+</head>
+<body>
+
+<script>
+
+//    let pass_year = prompt('When you completed B.Sc in SWE?')
+//
+//    if (pass_year == 2017) {
+//        alert('Thik koisen Bahe');
+//    }else {
+//        alert('kotha thik nohay bahe');
+//    }
+
+//    let my_bou = prompt('amr ki bou ase?');
+//
+//
+////    if (my_bou == true){
+////        alert('ghotona sotto')
+////    }else {
+////        alert('nohay bahe, nisa kotha kose ')
+////    }
+//
+//     my_bou ? alert('kotha thik') : alert('misa kotha bahe');
+//    // condition ? val 1 : val 2
+//
+//let age = prompt('age?', 18);
+//
+//let message =
+//        (age < 3) ? 'Hi, baby!' :
+//        (age < 18) ? 'Hello!' :
+//        (age < 100) ? 'Greetings!' : 'What an unusual age!';
+//
+//alert( message );
+//
+//let love = prompt('Do you love anyone?', '');
+//
+//(love == 'No') ? alert('Right!') : alert('Wrong.');
+
+
+let start = prompt('who are you');
+
+//(start == 'admin') ? prompt('your password') : alert('i dont know you')
+
+    if (start == 'admin'){
+        let password = prompt('your password ?');
+
+        (password == '1234') ? alert('you are welcome') : alert('your password is worng');
+
+    }else if (start == null){
+        alert('canceled');
+    }else {
+        alert('he he ehe ')
+    }
+
+    //prime number code
+
+let n = 10;
+
+nextPrime:
+    for (let i = 2; i <= n; i++) { // for each i...
+
+        for (let j = 2; j < i; j++) { // look for a divisor..
+            if (i % j == 0) continue nextPrime; // not a prime, go next i
+        }
+
+        alert( i ); // a prime
+    }
+
+</script>
+
+</body>
+</html>
